@@ -4,7 +4,7 @@
 #
 Name     : pypi-jupyter_nbgallery
 Version  : 2.0.0
-Release  : 54
+Release  : 55
 URL      : https://files.pythonhosted.org/packages/54/ed/24e5101d7d296f02cb8b45ebdecb9858f7a0ec44762b3037f0b404c8aced/jupyter-nbgallery-2.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/54/ed/24e5101d7d296f02cb8b45ebdecb9858f7a0ec44762b3037f0b404c8aced/jupyter-nbgallery-2.0.0.tar.gz
 Summary  : Jupyter extensions to add nbgallery integration
