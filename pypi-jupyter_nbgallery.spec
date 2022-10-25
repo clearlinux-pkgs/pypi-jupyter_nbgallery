@@ -4,7 +4,7 @@
 #
 Name     : pypi-jupyter_nbgallery
 Version  : 2.0.0
-Release  : 58
+Release  : 59
 URL      : https://files.pythonhosted.org/packages/54/ed/24e5101d7d296f02cb8b45ebdecb9858f7a0ec44762b3037f0b404c8aced/jupyter-nbgallery-2.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/54/ed/24e5101d7d296f02cb8b45ebdecb9858f7a0ec44762b3037f0b404c8aced/jupyter-nbgallery-2.0.0.tar.gz
 Summary  : Jupyter extensions to add nbgallery integration
@@ -79,7 +79,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1656396670
+export SOURCE_DATE_EPOCH=1666713345
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
@@ -101,7 +101,7 @@ popd
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pypi-jupyter_nbgallery
-cp %{_builddir}/jupyter-nbgallery-2.0.0/jupyter_nbgallery/nbextensions/instrumentation/crypto-js-license.txt %{buildroot}/usr/share/package-licenses/pypi-jupyter_nbgallery/1d0d2968b35836cde91ab65b1692d1546ffa4fb3
+cp %{_builddir}/jupyter-nbgallery-%{version}/jupyter_nbgallery/nbextensions/instrumentation/crypto-js-license.txt %{buildroot}/usr/share/package-licenses/pypi-jupyter_nbgallery/1d0d2968b35836cde91ab65b1692d1546ffa4fb3 || :
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
